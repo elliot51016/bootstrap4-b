@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>响应式案例</title>
+<!--    <link rel="stylesheet" href="css/bootstrap.css">-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+<body>
+<!---------------------------头部 -------------------------------->
+<header id="header">
+    <!--上部分-->
+    <div class="top-bar d-none d-sm-none d-md-none d-lg-block text-center text-muted">
+        <div class="container">
+            <div class="row">
+                <div class="top-bar-1 col-md-2" >
+                    <a href="">
+                          <i class="iconfont"></i>
+                        <span class="text-muted">加我QQ好友</span>
+                        <img src="img/friend.png" width="120"/>
+                    </a>
+                </div>
+                <div class="top-bar-2 col-md-5 " >
+                    <a href="">
+                        <i class="telephone"></i>
+                        <span class="text-muted">188-8888-8888（服务时间:9:00-21:00）</span>
+                    </a>
+                </div>
+                <div class="top-bar-3 col-md-2" >
+                    <a href="" class="text-muted">好好学习</a>
+                    <a href="" class="text-muted">啦啦啦</a>
+                </div>
+                <div class="top-bar-4 col-md-3" >
+                    <a href="#" type="button" class="myButton btn-sm">立即注册</a>
+                    <a href="#" class="ml-2 text-muted" >登录</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--下部分-->
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container " >
+            <a class="navbar-brand  d-flex justify-content-center align-content-center" href="#" >
+                <img src="img/logo.png" ></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="z-index: 9999">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">首页 <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.bilibili.com/">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            系统导航
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">喜羊羊与灰太狼</a>
+                            <a class="dropdown-item" href="#">啊巴啊巴</a>
+<!--                            <div class="dropdown-divider"></div>-->
+                            <a class="dropdown-item" href="#">铠甲勇士</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">关外酒店</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">烟火绝</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">客怎眠</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">求瘦马得好歇</a>
+                    </li>
+                </ul>
+
+            </div>
+            </div>
+        </nav>
+</header>
+<!---------------------------头部 -------------------------------->
+
+<!---------------------------轮播图 -------------------------------->
+    <section id="carousel" class="carousel slide" data-ride="carousel" style="color: blue;">
+        <ol class="carousel-indicators">
+            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel" data-slide-to="1"></li>
+            <li data-target="#carousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-sm-img="img/s1.png" data-lg-img="img/1.png">
+                <div class="carousel-caption d-none d-md-block d-lg-block">
+                    <h5>守护</h5>
+                    <p>Lights are burning in thousands of homes</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-sm-img="img/s2.png" data-lg-img="img/2.png">
+                <div class="carousel-caption d-none d-md-block d-lg-block">
+                    <h5>隐退</h5>
+                    <p>The hermit rose from his knees; the King knocked. </p>
+                </div>
+              </div>
+            <div class="carousel-item" data-sm-img="img/s3.png" data-lg-img="img/3.png">
+<!--                <img src="img/1.png" alt="">-->
+                <div class="carousel-caption d-none d-md-block d-lg-block">
+                    <h5>峰峦</h5>
+                    <p>The most rugged mountains have made you and me mad</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </section>
+<!---------------------------热门 -------------------------------->
+<section id="hot">
+    <div class="text-center  m-1">
+        <h2> <strong> 热门人物 </strong> </h2>
+
+        <img src="img/星星.png" height="20" width="20"/>
+        <img src="img/星星.png" height="20" width="20"/>
+        <img src="img/星星.png" height="20" width="20"/>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-lg-4 mt-3 mb-3">
+                <div class="media">
+                   <img class="mr-3 img-fluid rounded-circle" src="img/1m.jpg" height="150" width="150" alt="Generic placeholder image" >
+                <div class="media-body">
+                    <h5 class="mt-0">无名</h5>
+                    乘着甲铁城现身的神秘少女。看来似乎是受到武士们的特别对待，不过她的真实身份是——卡巴内利。
+                </div>
+            </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mt-3 mb-3">
+                <div class="media">
+                    <img class="mr-3 img-fluid rounded-circle" src="img/1n.png" height="150" width="150" alt="Generic placeholder image" >
+                    <div class="media-body">
+                        <h5 class="mt-0">生驹</h5>
+                        住在以炼铁和蒸汽机的生产为业的显金驿的蒸汽锻冶少年。为了打倒卡巴内，和朋友逞生一起开发了独自的武器“贯筒”。现在仍然受到众人的轻视，但期盼着有朝一日能让人们对自己刮目相看。                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mt-3 mb-3">
+                <div class="media">
+                    <img class="mr-3 img-fluid rounded-circle" src="img/2m.jpg" height="150" width="150" alt="Generic placeholder image" >
+                    <div class="media-body  " title='                        峰原高中三年级学生。以童星身份出道而活跃，转型成为女演员后广受欢迎。不过两年前突然停止演艺活动，现在过着平凡高中生的生活。
+'>
+
+                        <h5 class="mt-0">樱岛麻衣</h5>
+                        峰原高中三年级学生。以童星身份出道而活跃，转型成为女演员后广受欢迎。不过两年前突然停止演艺活动，现在过着平凡高中生的生活。
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mt-3 mb-3">
+                <div class="media">
+                    <img class="mr-3 img-fluid rounded-circle" src="img/2n.jpeg" height="150" width="150" alt="Generic placeholder image" >
+                    <div class="media-body">
+                        <h5 class="mt-0">梓川咲太</h5>
+                        活在这个时代却没有手机，有点古怪的高中二年级学生，就读县立峰原高中。在图书馆遇见打扮成兔女郎的麻衣，并和她逐渐熟识。
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mt-3 mb-3">
+                <div class="media">
+                    <img class="mr-3 img-fluid rounded-circle" src="img/3m.jpeg" height="150" width="150" alt="Generic placeholder image" >
+                    <div class="media-body">
+                        <h5 class="mt-0">灶门 祢豆子</h5>
+                        炭治郎的妹妹。
+                        14岁，家人被鬼袭击后的唯一生还者，因鬼舞辻无惨的血而变成了鬼。
+                        压制住了吃人本能保护了炭治郎，获得了富冈义勇的认同。
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mt-3 mb-3">
+                <div class="media">
+                    <img class="mr-3 img-fluid rounded-circle" src="img/3n.jpg" height="150" width="150" alt="Generic placeholder image" >
+                    <div class="media-body">
+                        <h5 class="mt-0">灶门 炭治郎</h5>
+                        15岁，善良温柔的少年，重视家人，个性认真顽固有担当的长男。
+                        以拯救变成鬼的妹妹祢豆子，为家族报仇为目标，在富冈义勇的引荐下成为鳞泷左近次的弟子，经过2年的艰苦训练，通过最终选拔成为鬼杀队剑士。
+                        背负着妹妹藏身的箱子行动，重视妹妹甚于自己的生命。
+                        有着独特的敏锐嗅觉，能从气味中分辨人的情感，亦能分辨人与鬼经过训练后甚至能在战斗时辨别出对手弱点的气味“隙之线”，后获得了可以看透一切的通透世界。
+                        全力砍杀害人的鬼，但对曾是人类的鬼的空虚与悲哀有着理解与怜悯。
+                        因从已故的父亲处继承的耳饰引起了无惨的注意，被其派出鬼追杀。
+                        无限城决战开始后，通过觉醒通透世界和义勇一同打败了猗窝座，随后遭遇了无惨并悟出了完整日之呼吸十二式与之决战。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!---------------------------产品 -------------------------------->
+<section id="product" class="container mb-5" >
+    <div class="overflow-auto">
+        <ul class="nav nav-tabs" id="myTab" role="tablist" >
+
+        <li class="nav-item mb-1">
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">青春猪头少年系列 </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">鬼灭之刃</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">甲铁城的卡巴内利</a>
+        </li>
+        <li class="nav-item mb-1">
+            <a class="nav-link "  data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">青春猪头少年系列 </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">鬼灭之刃</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">甲铁城的卡巴内利</a>
+        </li>
+        <li class="nav-item mb-1">
+            <a class="nav-link"  data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">青春猪头少年系列 </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">鬼灭之刃</a>
+        </li>
+    </ul>
+    </div>
+
+    <div class="tab-content mt-5" id="myTabContent">
+            <div class="tab-pane fade show active row  " id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="row mt-3 ">    <div class="limg col-4 d-none d-sm-none d-md-block"><img src="img/qczt.png" class="img-fluid" height="283"  alt=""></div>
+                    <div class="col-8 overflow-hidden container-fluid d-inline-block" style="width: 200px;" >——欸，来接吻吧？
+                        说出这句话捉弄我的她，不久之后从我面前消失了。
+                        图书馆没有兔女郎栖息。梓川咲太颠覆这个常识，遇见了野生的兔女郎。而且她不是普通的兔女郎，是咲太就读高中的高年级生，目前停止演艺活动的当红艺人樱岛麻衣学姐。几天前，她身边的人们开始看不见她，她似乎正在图书馆验证这个现象。
+                        咲太以查明原因为名目接近麻衣试着解谜，事态却朝着意外的方向演变——
+                        在天空与大海围绕的这座城镇，我与她的恋爱故事开始了。</div></div>
+                </div>
+            <div class="tab-pane fade row " id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <div class="row mt-3">  <div class="limg col-4 d-none  d-sm-none d-md-block"><img src="img/gmzr.png" class="" height="283" alt=""></div>
+                    <div class="col-8 overflow-hidden container-fluid" style="height: 283px;">    时值日本大正时期.
+                        传说太阳下山后，有恶鬼出没吃人。亦有猎鬼人斩杀恶鬼、保护人们。
+                        卖炭少年炭治郎，他那平凡而幸福的日常生活，在家人遭到恶鬼袭击的那一天发生了剧变。母亲与四个弟妹惨遭杀害，而与他一起生还的妹妹祢豆子亦异变成凶暴的鬼。
+                        在猎鬼人的指引下，立志成为猎鬼人的炭治郎与变成鬼却尚存理智的祢豆子踏上了旅程。通过艰苦的剑术修行与赌命试炼，炭治郎成为了猎鬼人组织“鬼杀队”的一员。
+                        为了让妹妹祢豆子变回人类，为了讨伐杀害家人的恶鬼，为了斩断悲伤的连锁，少年与鬼的战斗不曾停歇。
+                        幸福被破坏之时，总是弥漫着鲜血的味道。纵然我身俱灭，定将恶鬼斩杀！血风剑戟冒险谭，开幕！  </div></div>
+               </div>
+            <div class=" tab-pane fade " id="contact" role="tabpanel" aria-labelledby="contact-tab">
+<div class="row mt-3"> <div class="limg col-4 d-none  d-sm-none d-md-block" ><img src="img/tjc.png" class=" ml-1" height="283" alt=""></div>
+    <div class="col-8 overflow-hidden container-fluid"  style="height:283px; width: 100%"> 全世界被产业革命的波澜推动，自近世变迁至近代之时，不死的怪物突然出现。被钢铁的皮膜包覆，只要心脏不被破坏就不会消灭，被它啃咬的人似乎也会在死过一次之后复生，并开始袭击人类。之后被称为卡巴内的这些怪物爆发性地增殖，并覆盖了全世界。
+        远东岛国日本的人们，为了对抗卡巴内的威胁而在各地建造名为“驿”的城寨，并困守在其中，想方设法残存下去。能够在驿之间来往的只有装甲蒸汽机车（通称骏城），驿之间通过各自生产物的融通，总算是保证了生活。
+        住在以炼铁和蒸汽机的生产为业的显金驿的蒸汽锻冶少年，生驹。他为了打倒卡巴内，开发出独自的武器“贯筒”，同时期盼着有朝一日能够发挥出自己的力量。
+        某天，穿越前线的骏城之一甲铁城来到了显金驿。为了车辆的清扫整备而被召唤的生驹，目击到了从义务性的卡巴内检阅中被免除的不可思议少女。
+        　　当晚，生驹与自称为无名的那位白天的少女再会，此时骏城突然暴走并突入了显金驿。乘务员全灭，而且全部变成了卡巴内！
+        卡巴内从显金驿中溢出。如同要从被恐慌袭击的人浪中逆行一般，生驹奔跑着。这一次不能逃避，我要用贯筒打倒卡巴内！
+        ——于是，为了成为真正能闪耀光辉的男人，生驹的战斗开始了 </div></div>
+            </div>
+        </div>
+</section>
+
+<!---------------------------关于我们 -------------------------------->
+<section  id="about" class="mb-3">
+    <div class="text-center  m-1 border-top">
+        <h2> <strong> 关于我们 </strong> </h2>
+        <img src="img/星星.png" height="20" width="20"/>
+        <img src="img/星星.png" height="20" width="20"/>
+        <img src="img/星星.png" height="20" width="20"/>
+    </div>
+<div class="container">
+    <div class="row ">
+        <div class="order-1 order-sm-2 col-sm-12  col-md-8 col-lg-8 col-12 container-fluid text-muted">
+            <h2 class="text-center text-muted">bilibili</h2>
+            哔哩哔哩（Nasdaq:BILI [1]  ；英文名称：bilibili，简称B站）现为中国年轻世代高度聚集的文化社区和视频平台 [2]  ，该网站于2009年6月26日创建，被粉丝们亲切地称为“B站”。2018年3月28日，哔哩哔哩在美国纳斯达克上市 [3]  。2020年9月15日，B站定制的视频遥感卫星——“哔哩哔哩视频卫星”成功升空 [4]  。
+            B站早期是一个ACG（动画、漫画、游戏 [5]  ）内容创作与分享的视频网站 [6]  。经过十年多的发展，围绕用户、创作者和内容，构建了一个源源不断产生优质内容的生态系统 [2]  ，B站已经涵盖7000多个兴趣圈层的多元文化社区 [7]  ，曾获得QuestMobile研究院评选的“Z世代偏爱APP”和“Z世代偏爱泛娱乐APP”两项榜单第一名 [8]  并入选“BrandZ”报告2019最具价值中国品牌100强 [9]  。
+            截至2020年第二季度，B站月均活跃用户达1.72亿，移动端月活用户达1.53亿。 [10]  ；18至35岁用户占比达78%。 [2]  2020年1月9日，胡润研究院发布《2019胡润中国500强民营企业》，哔哩哔哩位列第180位。2020年3月18日B站2019年Q4及全年财报：全年营收67.8亿元，同比增长64% [11]  。
+        </div>
+        <div class="col-4 col-lg-4 order-3 order-sm-1 col-sm-12 text-center d-none  d-sm-none d-md-block d-lg-block">
+            <img src="img/bili.png" height="268" width="268"/>
+        </div>
+    </div>
+</div>
+
+</section>
+
+<!---------------------------友情链接 -------------------------------->
+<section id="link" class="d-none d-md-none d-lg-block">
+    <div class="text-center  m-1 border-top">
+        <h2> <strong> 友情链接 </strong> </h2>
+
+        <img src="img/星星.png" height="20" width="20"/>
+        <img src="img/星星.png" height="20" width="20"/>
+        <img src="img/星星.png" height="20" width="20"/>
+    </div>
+    <div class="container mt-2 mb-3 ">
+        <div class="row d-flex align-content-center justify-content-around   logo">
+            <img class="row-1" src="logo/wunsun-logo.png" height="50" />
+            <img class="row-1" src="logo/logo-xbox.png" height="50" />
+            <img class="row-1" src="logo/logo-cat.png" height="50" />
+            <img class="row-1" src="logo/logo02.png" height="50" />
+            <img class="row-1" src="logo/logo2.png" height="50" />
+            <img class="row-1" src="logo/logo (1).png" height="50"/>
+            <img class="row-1" src="logo/logo.png" height="50" />
+            <img class="row-1" src="logo/G, google. logo.png" height="50" />
+<!--            <img class="row-1" src="logo/logo-cat.png" height="50" />-->
+<!--            <img class="row-1" src="logo/logo02.png" height="50"/>-->
+<!--            <img class="row-1" src="logo/logo2.png" height="50" />-->
+<!--            <img class="row-1" src="logo/logo (1).png" height="50" />-->
+        </div>
+    </div>
+</section>
+
+<!---------------------------尾部 -------------------------------->
+<section id="footer"    >
+    <div class="container">
+        <div class="row">
+            <div class=" col-md-4 col-lg-3 col-sm-12 ">
+                <div class="row">
+                    <ul class="offset-md-0 offset-2 col-5  text-muted">
+                        <li><a href="">夏蝉冬雪</a></li>
+                        <li><a href="">轮回一瞥</a></li>
+                        <li><a href="">悟道修炼</a></li>
+                    </ul>
+                    <ul class="col-5 text-muted">
+                        <li><a href="#">一生缘劫</a></li>
+                        <li><a href="#">白纸花卷</a></li>
+                        <li><a href="#">绘江湖险</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="offset-2 col-4 col-lg-4   col-md-6  d-none  d-lg-block">
+                 <span>地址：河北省廊坊市三河市</span><br>
+                 <span>联系电话：8888-8888-8888</span><br>
+                 <span>邮箱：1297298401@qq.com</span>
+            </div>
+            <div class=" col-lg-2 col-md-2  text-center d-none d-md-block d-lg-block col-sm-none">
+                 <span>联系我们</span><br>
+                <span><img src="img/yQQ.png"  data-toggle="tooltip" data-placement="bottom" title="QQ" width="35" alt=""></span>
+                <span><img src="img/yWX.png"  data-toggle="tooltip" data-placement="bottom" title="WX" width="35" alt=""></span>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+<!---------------------------尾部 -------------------------------->
+
+<!--<script src="js/bootstrap.js"></script>-->
+<script src="js/jquery-3.1.1.js"></script>
+<!--<script src="js/popper.js"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

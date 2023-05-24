@@ -1,0 +1,215 @@
+/************************************通用-begin*********************************/
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none !important;
+    /*font-size: 12px;*/
+}
+body{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+@font-face {
+    font-family: 'iconfont';  /* project id 2232071 */
+    src: url('//at.alicdn.com/t/font_2232071_i86pj1bj2qn.eot');
+    src: url('//at.alicdn.com/t/font_2232071_i86pj1bj2qn.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_2232071_i86pj1bj2qn.woff2') format('woff2'),
+    url('//at.alicdn.com/t/font_2232071_i86pj1bj2qn.woff') format('woff'),
+    url('//at.alicdn.com/t/font_2232071_i86pj1bj2qn.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_2232071_i86pj1bj2qn.svg#iconfont') format('svg');
+}
+.iconfont:before{
+    content: "\e607";
+    color: black;
+    font-family:"iconfont" !important;
+    font-size:13px;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+.telephone:before{
+    content: "\e778";
+    color:#A48B78;
+    font-family:"iconfont" !important;
+    font-size:13px;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+/*自定义按钮*/
+.myButton{ color:rgb(255, 255, 255);font-size:14px;padding-top:0px;padding-bottom:0px;padding-left:1px;padding-right:1px;border-width:1px;border-color:rgb(147, 24, 242);border-style:solid;border-radius:5px;background-color:rgb(131, 48, 240);}.myButton:hover{color:#ffffff;background-color:#0600c2;border-color:#000000;}
+/************************************通用-end*********************************/
+/************************************头部-begin*********************************/
+#header{
+    /*background-color: red;*/
+}
+#header .top-bar{
+    border-bottom: 1px solid #e0e0e0;
+    height: 40px;
+    line-height: 39px;
+}
+#header .top-bar .container .row >div+div{
+    border-left: 1px solid #e0e0e0;
+}
+#header .top-bar .container .row .top-bar-1 a{
+    position: relative;
+}
+#header .top-bar .container .row .top-bar-1 a:hover img{
+    display: block;
+}
+#header .top-bar .container .row .top-bar-1 a img{
+    position: absolute;
+    top:20px;
+    z-index: 999;
+    display: none;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/*导航栏*/
+#header .navbar{
+    height: 70px;
+    border-bottom: 1px solid #e0e0e0;
+}
+#header .navbar .navbar-brand{
+    /*margin-left: 30px;*/
+    margin-right: 60px;
+}
+#header .navbar .navbar-brand>img {
+    height: 50px;
+}
+#header .navbar li {
+    position: relative;
+    margin-left: 20px;
+}
+#header .navbar li a{
+    /*width: 80px;*/
+    height: 50px;
+    /*background-color: red;*/
+display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+#header .navbar li a:hover{
+
+    border-bottom: 2px solid purple;
+}
+.nav-link{
+    background-color:rgba(255,255,255,0.8);
+}
+/************************************头部-end*********************************/
+/************************************轮播图-begin*********************************/
+.carousel-inner .carousel-item{
+    background:no-repeat center center;
+    background-size:cover ;
+}
+.carousel-inner .carousel-item{
+
+}
+ @media screen  and (min-width: 900px){
+     .carousel-inner .carousel-item{height: 410px}
+ }
+
+/************************************轮播图-end*********************************/
+/************************************热门-begin*********************************/
+#hot{
+    /*background-color: green;*/
+}
+media-body{
+    background-color: red;
+    width:100px;
+/*//需要指定宽度*/
+display: -webkit-box;
+/*//将对象作为弹性伸缩盒子模型显示*/
+-webkit-box-orient: vertical;
+/*//设置或检索伸缩盒对象的子元素的排列方式*/
+-webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow:ellipsis;
+}
+.media-body{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;            /*设置p元素最大4行，父元素需填写宽度才明显*/
+    text-overflow: ellipsis;
+    overflow: hidden;
+    /* autoprefixer: off */
+    -webkit-box-orient: vertical;
+    /* autoprefixer: on */
+    /*因为代码环境的关系-webkit-box-orient被过滤掉了 autoprefixer 这个关键字可以免除被过滤的动作*/
+    　　　　　　　　　　word-wrap:break-word;
+    　　　　　　　　　　word-break:break-all;
+
+}
+/************************************热门-end*********************************/
+/************************************产品-begin*********************************/
+#product{
+    /*background-color: cornflowerblue;/*/
+}
+#product .nav-tabs .nav-item .nav-link:hover{
+    border-bottom: 1px solid blueviolet;
+
+}
+.limg{
+    width: 100%;
+    /*background-color: red;*/
+    text-align: center;
+}
+.limg img{
+
+    height:283px
+
+}
+
+@media screen and (max-width: 900px) {
+    .limg img{
+        /*margin-left:100px    ;*/
+        max-width: 100% !important;
+        height: auto !important;
+    }
+}
+.active{
+    border-bottom: none !important;
+}
+/************************************产品-end*********************************/
+/************************************关于我们-begin*********************************/
+#about{
+    /*/: grey;*/
+    /*background-color: #EEEEEE;*/
+}
+/************************************关于我们-end*********************************/
+/************************************友情链接-begin*********************************/
+#link{
+    /*background-color: blueviolet;*/
+}
+/*#link .container .logo img {*/
+/*    margin-left: 20px!important;    ;*/
+/*}*/
+/************************************友情链接-end*********************************/
+/************************************尾部-begin*********************************/
+#footer{
+    color: #EEEEEE;
+    height: 180px!important;
+    /*background-color: red;*/
+    /*display: flex;*/
+    /*align-items: center;*/
+    background: url("../img/s1.png") no-repeat   ;
+    /*background-color: fuchsia;/*/
+    /*border-bottom: ;*/
+}
+#footer .container .row {
+    height: 180px   ;
+    display: flex;
+    /*background-color: darkcyan;*/
+    /*height: 180px;*/
+    /*background-color: #fff;*/
+    justify-content: center;
+    align-items: center;
+}
+#footer .container .row a{
+    color: #CCCCCC;
+}
+/************************************尾部-end*********************************/
